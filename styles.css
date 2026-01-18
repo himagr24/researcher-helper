@@ -1,0 +1,132 @@
+:root {
+    --primary: #2563eb;     /* blue */
+    --secondary: #f1f5f9;   /* light gray */
+    --accent: #f59e0b;     /* gold */
+    --text: #0f172a;
+    --muted: #64748b;
+    --border: #e5e7eb;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    width: 340px;
+    margin: 0;
+    padding: 14px;
+    background: #ffffff;
+    color: var(--text);
+  }
+  
+  /* Header */
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  /* Notes */
+  textarea {
+    width: 95%;
+    min-height: 60px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--secondary);
+    resize: vertical;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+
+  }
+  
+  /* Rating row */
+  label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  
+  select {
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  /* Save button */
+  button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Divider */
+  hr {
+    margin: 14px 0;
+    border: none;
+    border-top: 1px solid var(--border);
+  }
+  
+  /* Saved papers */
+  h4 {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  
+  #papersList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Paper item */
+  .paper-item {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    margin-bottom: 6px;
+    cursor: pointer;
+    background: #ffffff;
+  }
+  
+  .paper-item:hover {
+    background: var(--secondary);
+  }
+  
+  .paper-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .paper-rating {
+    font-size: 12px;
+    color: var(--accent);
+  }
+
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-items: center;
+  }
+  
+  .container > * {
+    width: 100%;
+  }
+  
+  
+  

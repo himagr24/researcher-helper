@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Repap",
+    "version": "0.1",
+    "description": "Read, store, and rate research papers",
+  
+    "action": {
+      "default_popup": "popup.html"
+    },
+  
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

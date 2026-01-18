@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container"></div>
+  <h3 id="title">No paper detected</h3>
+
+  <textarea id="notes" placeholder="Your notes..."></textarea>
+
+  <label>
+    Rating:
+    <select id="rating">
+      <option value="">No Rating</option>
+      <option value="1">Poor</option>
+      <option value="2">Fair</option>
+      <option value="3">Good</option>
+      <option value="4">Very Good</option>
+      <option value="5">Excellent</option>
+    </select>
+  </label>
+  
+
+  <button id="save">Save</button>
+
+  <hr />
+
+  <h4>Saved Papers</h4>
+  <ul id="papersList"></ul>
+</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
